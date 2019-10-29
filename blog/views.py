@@ -4,7 +4,7 @@ from .models import Post
 import random
 
 
-# Create your views here.
+# All views for this application are rendered from here.
 def index(request):
     posts = Post.objects.all()
     return render(request, 'index.html', {'posts': posts})
